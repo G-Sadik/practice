@@ -1,2 +1,1 @@
-f2  changed 
-f2 commit
+f2 test
