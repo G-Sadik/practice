@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NIKE | Just Do It</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="infrared">
+
+<!-- Nike Swoosh SVG symbol -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Nike Air Max 90 inspired silhouette -->
+    <path id="sil" d="M50 230C50 216 60 208 72 206C66 158 72 108 108 76C122 64 146 62 164 72C194 94 220 108 258 110C316 112 374 128 424 154C472 178 538 182 568 212C578 224 576 244 558 254L72 258C56 258 50 248 50 230Z"/>
+    <g id="art">
+      <!-- Main upper -->
+      <use href="#sil" style="fill:var(--c1)"/>
+      <!-- Mudguard / mid panel -->
+      <path d="M72 206C72 168 90 148 128 144C196 138 258 150 308 176C346 198 408 202 476 194L72 208Z" style="fill:var(--c2)"/>
+      <!-- Heel overlay -->
+      <path d="M476 168C514 180 548 188 568 210C576 224 574 236 566 240C538 232 502 218 476 194Z" fill="#000" opacity=".2"/>
+      <!-- Toe box stitching -->
+      <path d="M108 78C122 66 146 64 162 74C144 86 120 90 108 78Z" fill="#111"/>
+      <!-- Accent swoosh area -->
+      <path d="M156 68C180 58 206 72 220 92C200 90 176 84 156 68Z" style="fill:var(--c2)"/>
+      <!-- NIKE SWOOSH -->
+      <path d="M130 180C130 180 180 150 260 148C340 146 420 158 480 142C500 136 510 128 510 128C510 128 490 160 400 170C310 180 220 172 160 190C140 196 130 180 130 180Z" style="fill:var(--swoosh);opacity:.92"/>
+      <!-- Air unit bubbles -->
+      <ellipse cx="200" cy="246" rx="36" ry="10" fill="#fff" opacity=".35"/>
+      <ellipse cx="380" cy="244" rx="28" ry="9" fill="#fff" opacity=".25"/>
+      <!-- Lace detail -->
+      <path d="M240 108l20 20M270 112l22 20M302 118l24 18M334 126l24 16" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+      <!-- Sole unit -->
+      <path d="M46 226C46 212 58 206 72 206L476 194C524 192 568 204 574 232C576 250 562 258 542 258L68 262C50 262 46 250 46 226Z" style="fill:var(--sole)"/>
+      <!-- Sole texture -->
+      <rect x="130" y="224" width="160" height="20" rx="10" fill="#000" opacity=".14"/>
+      <!-- Sole line -->
+      <path d="M50 248H568" stroke="#000" stroke-opacity=".15" stroke-width="3"/>
+    </g>
+  </defs>
+</svg>
+
+<header class="nav">
+  <a class="logo" href="#top">
+    <!-- Nike Swoosh logo -->
+    <svg class="nike-logo" viewBox="0 0 100 36" width="72" height="26" fill="#fff">
+      <path d="M7.5 29.3C4.2 30.8 1.5 30.5 0.4 28.8C-1.2 26.2 0.8 21.4 5.4 16.1C10.2 10.5 17 5.9 22.4 4L95.4 0.1C95.4 0.1 38.2 18.6 25 24.3C18.3 27.2 11.6 29.1 7.5 29.3Z"/>
+    </svg>
+  </a>
+  <nav><a href="#drops">Drops</a><a href="#tech">Tech</a><a href="#join">Join</a></nav>
+  <button class="bag" id="bag" type="button" aria-label="Open bag">Bag <b id="count">0</b></button>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <div class="stage">
+      <div class="scene" id="scene">
+        <div class="giant" aria-hidden="true">JUST DO IT</div>
+        <div class="shoe" id="shoe"></div>
+      </div>
+    </div>
+    <div class="copy">
+      <h1>Nike Air Max 90</h1>
+      <p>Iconic Air cushioning that changed the game forever. Move your cursor, or drag, to turn the shoe.</p>
+      <div class="swatches" role="group" aria-label="Colorway">
+        <button type="button" data-t="infrared" class="on" aria-label="Infrared"></button>
+        <button type="button" data-t="royalblue" aria-label="Royal Blue"></button>
+        <button type="button" data-t="volt" aria-label="Volt"></button>
+        <button type="button" data-t="bred" aria-label="Bred"></button>
+      </div>
+      <button class="cta" id="add" type="button">Add to bag — $150</button>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div><span>Just Do It</span><span>Free shipping over $50</span><span>New drops every week</span><span>Just Do It</span><span>Free shipping over $50</span><span>New drops every week</span></div></div>
+
+  <section id="tech" class="tech">
+    <h2>Innovation in every step</h2>
+    <div class="cards">
+      <article class="tilt"><div class="lift"><h3>Visible Air</h3><p>Max Air unit delivers unrivaled cushioning you can see and feel.</p></div></article>
+      <article class="tilt"><div class="lift"><h3>Waffle outsole</h3><p>Heritage traction pattern engineered for grip on any surface.</p></div></article>
+      <article class="tilt"><div class="lift"><h3>Flyknit upper</h3><p>Lightweight, breathable knit that wraps your foot like a second skin.</p></div></article>
+    </div>
+  </section>
+
+  <section id="drops" class="drops">
+    <h2>The lineup</h2>
+    <div class="grid">
+      <article class="tilt card" style="--c1:#CE1126;--c2:#111;--sole:#fff;--swoosh:#fff;--bgc:#f5cdd3">
+        <div class="lift">
+          <svg viewBox="0 0 600 300"><use href="#art"/></svg>
+          <h3>Air Jordan 1 Retro</h3>
+          <p>$180</p>
+        </div>
+      </article>
+      <article class="tilt card" style="--c1:#111;--c2:#333;--sole:#fff;--swoosh:#ff5a36;--bgc:#e0e0e0">
+        <div class="lift">
+          <svg viewBox="0 0 600 300"><use href="#art"/></svg>
+          <h3>Air Force 1 '07</h3>
+          <p>$120</p>
+        </div>
+      </article>
+      <article class="tilt card" style="--c1:#7cfc00;--c2:#111;--sole:#111;--swoosh:#111;--bgc:#d9ffc4">
+        <div class="lift">
+          <svg viewBox="0 0 600 300"><use href="#art"/></svg>
+          <h3>Nike Dunk Low</h3>
+          <p>$115</p>
+        </div>
+      </article>
+      <article class="tilt card" style="--c1:#0057b8;--c2:#fff;--sole:#f4f4f4;--swoosh:#fff;--bgc:#cce0f5">
+        <div class="lift">
+          <svg viewBox="0 0 600 300"><use href="#art"/></svg>
+          <h3>Air Max 97</h3>
+          <p>$175</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="join" class="join">
+    <h2>Be the first to know</h2>
+    <form id="joinForm"><input type="email" placeholder="you@email.com" aria-label="Email" required><button class="cta" type="submit">Join Nike Members</button></form>
+    <p id="joinMsg" aria-live="polite"></p>
+  </section>
+</main>
+
+<footer>Nike is a demo store. Powered by passion for sport.</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
